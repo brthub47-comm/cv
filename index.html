@@ -1,135 +1,760 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bertrand Hubert – Communication et marketing digital</title>
-<meta name="description" content="18 ans d'expérience en communication, branding et projets digitaux. Portfolio, parcours et contact.">
-<link rel="stylesheet" href="tokens.css">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Recette appli Amicial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Poppins:wght@500;600&display=swap">
 <style>
-.wrap{max-width:1120px;margin:0 auto;padding:0 1.25rem}
-nav{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:3px dotted var(--ink)}
-nav .wrap{display:flex;gap:1.4rem;flex-wrap:wrap;padding-top:.7rem;padding-bottom:.7rem;font:700 .85rem var(--body)}
-nav a{color:var(--ink);text-decoration:none}nav a:hover{color:var(--coral)}
-nav .cv{margin-left:auto;background:var(--ink);color:var(--paper);padding:.2rem .8rem}
-.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:3rem;align-items:center;padding:4rem 0}
-.hero h1{font-size:clamp(2.2rem,6vw,4.6rem);letter-spacing:-.02em}
-.hero h1 span{color:transparent;-webkit-text-stroke:2px var(--klein);display:block}
-.chip{display:inline-block;background:var(--marker);font:700 .95rem var(--head);padding:.5rem 1rem;margin:1.4rem 0}
-.hero p.lead{font-size:1.15rem;max-width:34em}
-.btns{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
-.btn{font:700 .95rem var(--body);padding:.8rem 1.3rem;text-decoration:none;border:3px solid var(--ink);color:var(--ink)}
-.btn.main{background:var(--ink);color:var(--paper)}.btn:hover{background:var(--coral);border-color:var(--coral);color:#fff}
-.photo{position:relative;padding:0 1.5rem 1.5rem 0}
-.photo .asa{position:absolute;inset:1.5rem 0 0 1.5rem}
-.photo img{position:relative;display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border:3px solid var(--ink)}
-.band{height:3.2rem}
-section{padding:4rem 0}
-h2.big{font-size:clamp(1.9rem,5vw,3.4rem);padding:.8rem 1.6rem;display:inline-block;margin-bottom:2rem}
-.do{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:0;background:var(--klein);color:#fff}
-.do div{padding:1.6rem;border:1px dotted #fff}.do h3{margin-bottom:.4rem;color:var(--marker)}
-#portfolio{background:var(--ink);color:var(--paper)}#portfolio h2.big{border-color:var(--marker)}
-.tabs{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.6rem}
-.tabs button{font:700 .9rem var(--head);padding:.6rem 1.2rem;background:none;color:var(--paper);border:3px solid var(--paper);cursor:pointer}
-.tabs button[aria-pressed=true]{background:var(--marker);border-color:var(--marker);color:var(--ink)}
-.grid{columns:3 15rem;column-gap:1rem}
-.grid button{display:block;width:100%;margin:0 0 1rem;padding:0;border:0;background:none;cursor:zoom-in;break-inside:avoid;position:relative}
-.grid img{display:block;width:100%;height:auto;border:3px solid transparent}
-.grid button:hover img{border-color:var(--coral)}
-.grid [hidden]{display:none}
-.links{margin-top:1rem;font-size:.9rem}.links a{color:var(--marker)}
-dialog{max-width:min(92vw,900px);max-height:92vh;border:3px solid var(--ink);padding:1rem;background:var(--paper);color:var(--ink)}
-dialog::backdrop{background:rgba(20,32,43,.85)}
-dialog img{max-width:100%;max-height:72vh;display:block;margin:0 auto}
-dialog p{margin-top:.8rem}dialog button{margin-top:.8rem;font:700 .9rem var(--body);padding:.5rem 1rem;border:3px solid var(--ink);background:var(--marker);cursor:pointer}
-.job{display:grid;grid-template-columns:11rem 1fr;gap:1.5rem;padding:1.4rem 0;border-bottom:3px dotted var(--line)}
-.job h3{font-size:1.05rem;margin-bottom:.4rem}.org{color:var(--mute)}
-.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2rem}
-.cols>div{border-top:6px solid var(--marker);padding-top:.8rem}
-.contact{font:800 clamp(1.1rem,3.6vw,2rem) var(--head);line-height:1.6}.contact a{color:var(--ink)}
-footer{padding:1.2rem 0;color:var(--paper);background:var(--ink);font-size:.85rem}
-@media(max-width:760px){.hero{grid-template-columns:1fr;gap:2rem;padding:2rem 0}.job{grid-template-columns:1fr;gap:.2rem}nav .cv{margin-left:0}}
+:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+:root{
+  --bg:#F2F5F8; --surface:#FFFFFF; --surface2:#EAF0F4; --ink:#1E2C3F; --muted:#5A6A7E; --line:#D9E1E9;
+  --brand:#3E5A7F; --brand-ink:#FFFFFF; --accent:#F29559; --accent-ink:#5A2A0C; --sky:#C7E0E4;
+  --ok:#3F7A45; --ok-bg:#E3F0E3; --ko:#B8392A; --ko-bg:#F9E3DF; --warn:#A8650E; --warn-bg:#FBEBD2; --info-bg:#E2EBF5;
+  --shadow:0 1px 2px rgba(30,44,63,.06),0 4px 14px rgba(30,44,63,.06);
+  --f-ui:"Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-sub:"Poppins","Open Sans",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --bg:#111922; --surface:#19232F; --surface2:#1F2B39; --ink:#E4EBF2; --muted:#9AA9BA; --line:#2B3949;
+  --brand:#2F4866; --brand-ink:#F1F5F9; --accent:#F4A673; --accent-ink:#2B1406; --sky:#284750;
+  --ok:#86BE8A; --ok-bg:#1F3324; --ko:#EE8575; --ko-bg:#3A1F1B; --warn:#E8B062; --warn-bg:#3A2C15; --info-bg:#1E2C3E;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#111922; --surface:#19232F; --surface2:#1F2B39; --ink:#E4EBF2; --muted:#9AA9BA; --line:#2B3949;
+  --brand:#2F4866; --brand-ink:#F1F5F9; --accent:#F4A673; --accent-ink:#2B1406; --sky:#284750;
+  --ok:#86BE8A; --ok-bg:#1F3324; --ko:#EE8575; --ko-bg:#3A1F1B; --warn:#E8B062; --warn-bg:#3A2C15; --info-bg:#1E2C3E;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-ui);font-size:15px;line-height:1.5}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:16px}
+
+/* header */
+.top{background:var(--brand);color:var(--brand-ink)}
+.top .wrap{padding-block:22px 0;display:flex;flex-direction:column;gap:14px}
+.eyebrow{font-family:var(--f-sub);font-weight:500;font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.8}
+h1{font-weight:800;font-size:clamp(24px,4vw,32px);line-height:1.15;margin:0;text-wrap:balance}
+.lede{margin:0;max-width:62ch;opacity:.9}
+.tabs{display:flex;gap:4px;overflow-x:auto;margin-top:6px;scrollbar-width:none}
+.tab{appearance:none;border:0;background:transparent;color:var(--brand-ink);opacity:.75;padding:10px 14px 12px;font-weight:600;border-radius:10px 10px 0 0;cursor:pointer;white-space:nowrap;display:flex;gap:8px;align-items:center}
+.tab:hover{opacity:1}
+.tab[aria-selected="true"]{background:var(--bg);color:var(--ink);opacity:1}
+.count{font-size:12px;font-weight:700;background:var(--accent);color:var(--accent-ink);border-radius:99px;padding:0 7px;min-width:20px;text-align:center}
+
+main .wrap{padding-block:22px 48px;display:flex;flex-direction:column;gap:20px}
+
+/* identity */
+.who{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:12px;box-shadow:var(--shadow)}
+.who.missing{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 25%,transparent)}
+.who-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.who h2{font-size:16px;margin:0}
+.who p{margin:0;color:var(--muted);font-size:13.5px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+label.f{display:flex;flex-direction:column;gap:5px;font-size:13px;font-weight:600;color:var(--muted)}
+input[type=text],input[type=search],select,textarea{background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:9px 11px;width:100%;min-width:0}
+textarea{resize:vertical;min-height:70px}
+input:focus,select:focus,textarea:focus{border-color:var(--brand)}
+.who-summary{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:6px;border-radius:99px;padding:3px 10px;font-size:12.5px;font-weight:600;background:var(--surface2);color:var(--ink)}
+.linkbtn{appearance:none;border:0;background:none;color:var(--brand);font-weight:600;cursor:pointer;padding:0;text-decoration:underline;text-underline-offset:3px}
+:root[data-theme="dark"] .linkbtn{color:var(--accent)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .linkbtn{color:var(--accent)}}
+
+.btn{appearance:none;border:1px solid transparent;background:var(--brand);color:#fff;border-radius:9px;padding:9px 16px;font-weight:700;cursor:pointer}
+.btn.accent{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+
+.notice{border-radius:12px;padding:12px 14px;background:var(--info-bg);font-size:13.5px}
+.notice.warn{background:var(--warn-bg)}
+
+/* progress strip */
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.stat b{display:block;font-size:24px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.1}
+.stat span{font-size:12.5px;color:var(--muted)}
+
+/* modules */
+.module{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.module>summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.module>summary::-webkit-details-marker{display:none}
+.mcode{font-family:var(--f-sub);font-weight:600;font-size:12px;letter-spacing:.06em;background:var(--sky);color:var(--ink);border-radius:6px;padding:2px 7px}
+.mname{font-weight:700;font-size:16px;flex:1 1 180px}
+.mprog{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.bar{width:110px;height:6px;border-radius:9px;background:var(--surface2);overflow:hidden;display:flex}
+.bar i{display:block;height:100%}
+.bar .o{background:var(--ok)} .bar .k{background:var(--ko)} .bar .b{background:var(--warn)}
+.chev{transition:transform .2s}
+details[open]>summary .chev{transform:rotate(90deg)}
+.mdesc{margin:0;padding:0 16px 12px;color:var(--muted);font-size:13.5px}
+.scn{border-top:1px solid var(--line);padding:14px 16px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 16px}
+.scn-main{display:flex;flex-direction:column;gap:6px;min-width:0}
+.scn-title{font-weight:700;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.scn-id{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;font-weight:600}
+.scn dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:13.5px}
+.scn dt{color:var(--muted);font-weight:600}
+.scn dd{margin:0}
+.scn-side{display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{appearance:none;border:0;background:var(--surface);padding:7px 11px;font-weight:700;font-size:13px;cursor:pointer;color:var(--muted)}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"][data-s="ok"]{background:var(--ok-bg);color:var(--ok)}
+.seg button[aria-pressed="true"][data-s="ko"]{background:var(--ko-bg);color:var(--ko)}
+.seg button[aria-pressed="true"][data-s="bloque"]{background:var(--warn-bg);color:var(--warn)}
+.others{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;text-align:right}
+.scn-note{grid-column:1/-1;display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap}
+.scn-note textarea{flex:1 1 260px;min-height:44px}
+.scn.admin .scn-title::after{content:"Admins";font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:var(--surface2);color:var(--muted);padding:1px 7px;border-radius:99px}
+@media (max-width:620px){.scn{grid-template-columns:1fr}.scn-side{align-items:flex-start}.others{text-align:left}}
+
+/* form */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:14px}
+.card h2{margin:0;font-size:18px}
+.sev{display:flex;gap:8px;flex-wrap:wrap}
+.sev label{flex:1 1 160px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;display:flex;flex-direction:column;gap:2px;font-size:13px}
+.sev label b{font-size:14px}
+.sev label span{color:var(--muted)}
+.sev input{position:absolute;opacity:0;pointer-events:none}
+.sev label:has(input:checked){border-color:var(--brand);background:var(--surface2);box-shadow:inset 0 0 0 1px var(--brand)}
+.sev label:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+.row-end{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+.hint{font-size:12.5px;color:var(--muted);font-weight:400}
+
+/* tracker */
+.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:end}
+.filters>*{flex:1 1 150px}
+.filters .grow{flex:2 1 220px}
+.bugs{display:flex;flex-direction:column;gap:10px}
+.bug{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--line);border-radius:12px}
+.bug[data-sev="bloquant"]{border-left-color:var(--ko)}
+.bug[data-sev="majeur"]{border-left-color:var(--accent)}
+.bug[data-sev="mineur"]{border-left-color:var(--sky)}
+.bug[data-sev="suggestion"]{border-left-color:var(--ok)}
+.bug>summary{list-style:none;cursor:pointer;padding:12px 14px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 12px;align-items:center}
+.bug>summary::-webkit-details-marker{display:none}
+.bug-title{font-weight:700;overflow-wrap:anywhere}
+.bug-meta{grid-column:1/-1;display:flex;gap:6px 12px;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
+.pill{font-size:12px;font-weight:700;border-radius:99px;padding:2px 9px;white-space:nowrap}
+.st-nouveau{background:var(--info-bg);color:var(--brand)}
+.st-transmis{background:var(--warn-bg);color:var(--warn)}
+.st-aretester{background:var(--sky);color:var(--ink)}
+.st-valide{background:var(--ok-bg);color:var(--ok)}
+.st-nonretenu{background:var(--surface2);color:var(--muted)}
+:root[data-theme="dark"] .st-nouveau{color:var(--ink)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .st-nouveau{color:var(--ink)}}
+.bug-body{padding:0 14px 14px;display:flex;flex-direction:column;gap:12px}
+.bug-body dl{margin:0;display:grid;grid-template-columns:minmax(110px,auto) 1fr;gap:6px 14px;font-size:13.5px}
+.bug-body dt{color:var(--muted);font-weight:600}
+.bug-body dd{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.bug-actions{display:grid;grid-template-columns:minmax(180px,240px) 1fr;gap:12px;align-items:start}
+@media (max-width:620px){.bug-actions{grid-template-columns:1fr}.bug-body dl{grid-template-columns:1fr}.bug-body dt{margin-top:4px}}
+.empty{padding:28px 16px;text-align:center;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:14px}
+
+/* synthesis */
+.tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:700}
+tr:last-child td{border-bottom:0}
+td.n{text-align:right}
+th.n{text-align:right}
+.sectitle{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap}
+.sectitle h2{margin:0;font-size:18px}
+.sectitle p{margin:0;color:var(--muted);font-size:13.5px}
+
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600;font-size:14px;box-shadow:var(--shadow);max-width:calc(100% - 32px);z-index:10}
+@media (prefers-reduced-motion:reduce){.chev{transition:none}}
+.sync{font-size:12.5px;opacity:.85;display:flex;align-items:center;gap:6px}
+.sync i{width:8px;height:8px;border-radius:50%;background:#9FD4A3;display:inline-block}
+.sync.off i{background:var(--accent)}
 </style>
 </head>
 <body>
-<nav><div class="wrap"><a href="#portfolio">Portfolio</a><a href="#parcours">Parcours</a><a href="#apport">Ce que j'apporte</a><a href="#contact">Contact</a><a class="cv" href="CV_Bertrand_Hubert_2026.pdf" download>CV en PDF</a></div></nav>
 
-<header class="wrap hero">
-<div>
-<h1>Bertrand <span>Hubert</span></h1>
-<p class="chip">Communication et marketing digital</p>
-<p class="lead">18 ans d'expérience, dont 13 en conseil auprès de marques variées. Je transforme les enjeux clients en projets digitaux cohérents, de la recommandation à la mise en ligne.</p>
-<div class="btns"><a class="btn main" href="#portfolio">Voir mes réalisations</a><a class="btn" href="#contact">Me contacter</a></div>
-</div>
-<div class="photo"><div class="asa" aria-hidden="true"></div><img src="img/portrait.jpg" alt="Portrait de Bertrand Hubert"></div>
+<header class="top">
+  <div class="wrap">
+    <div class="eyebrow" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><span>Amicial · Service Communication</span><span class="sync off" id="sync"><i></i><span id="sync-t">Non connecté</span></span></div>
+    <h1>Recette de l'application interne</h1>
+    <p class="lede">Avant le déploiement, chaque testeur déroule les scénarios sur son téléphone, note le résultat et signale les problèmes. Tout est partagé en direct avec l'équipe projet.</p>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button class="tab" role="tab" id="tab-parcours" aria-controls="p-parcours" aria-selected="true">Scénarios de test</button>
+      <button class="tab" role="tab" id="tab-signaler" aria-controls="p-signaler" aria-selected="false">Signaler un problème</button>
+      <button class="tab" role="tab" id="tab-suivi" aria-controls="p-suivi" aria-selected="false">Suivi des problèmes <span class="count" id="c-open">0</span></button>
+      <button class="tab" role="tab" id="tab-synthese" aria-controls="p-synthese" aria-selected="false">Synthèse</button>
+    </nav>
+  </div>
 </header>
-<div class="band asa" aria-hidden="true"></div>
 
-<section class="wrap" id="apport">
-<h2 class="big dots">Ce que je fais</h2>
-<div class="do">
-<div><h3>Conseil et stratégie</h3><p>Briefs, recommandations, cahiers des charges, branding.</p></div>
-<div><h3>Gestion de projet</h3><p>Plannings, budgets, coordination des équipes créatives et techniques.</p></div>
-<div><h3>Web et réseaux sociaux</h3><p>Sites, SEO/SEA, contenus, application mobile.</p></div>
-<div><h3>IA générative</h3><p>Claude, ChatGPT, Gemini : usages, risques et bonnes pratiques.</p></div>
-</div>
-</section>
+<main>
+  <div class="wrap">
+    <div class="notice warn" id="offline" hidden></div>
 
-<section id="portfolio"><div class="wrap">
-<h2 class="big dots">Portfolio</h2>
-<div class="tabs" role="group" aria-label="Filtrer les réalisations">
-<button aria-pressed="true" data-f="all">Tout</button><button aria-pressed="false" data-f="web">Web</button><button aria-pressed="false" data-f="print">Print et réseaux</button><button aria-pressed="false" data-f="photo">Photo</button></div>
-<div class="grid" id="grid">
-<button data-c="web" data-t="Site du CH de Calais – refonte et pilotage"><img loading="lazy" src="img/web-ch-calais.jpg" alt="Site internet du CH de Calais"></button>
-<button data-c="web" data-t="Site Amicial"><img loading="lazy" src="img/web-amicial.jpg" alt="Site internet Amicial"></button>
-<button data-c="web" data-t="Application mobile « Amicial &amp; moi »"><img loading="lazy" src="img/web-app-amicial.jpg" alt="Application mobile Amicial et moi"></button>
-<button data-c="print" data-t="Affiche « Lager des étoiles »"><img loading="lazy" src="img/print-lager.jpg" alt="Affiche Lager des étoiles"></button>
-<button data-c="print" data-t="Cabaïa – notification « Santa is coming to town »"><img loading="lazy" src="img/print-cabaia.jpg" alt="Notification Cabaïa"></button>
-<button data-c="print" data-t="Lokki Kombucha – visuel réseaux sociaux"><img loading="lazy" src="img/print-lokki.jpg" alt="Visuel Lokki Kombucha"></button>
-<button data-c="print" data-t="Amicial – post « Recette intervention réussie »"><img loading="lazy" src="img/print-recette.jpg" alt="Post Amicial"></button>
-<button data-c="print" data-t="Identité visuelle – carte de visite"><img loading="lazy" src="img/card.jpg" alt="Carte de visite"></button>
-<button data-c="print" data-t="Identité visuelle – papeterie"><img loading="lazy" src="img/papeterie.jpg" alt="Papeterie"></button>
-<button data-c="print" data-t="Dofus Mag"><img loading="lazy" src="img/dofus.jpg" alt="Couverture Dofus Mag"></button>
-<button data-c="print" data-t="CH de Calais – livret d'accueil des internes"><img loading="lazy" src="img/livret-internes.jpg" alt="Livret d'accueil des internes"></button>
-<button data-c="print" data-t="CH de Calais – magazine Pulsations"><img loading="lazy" src="img/pulsations.jpg" alt="Magazine Pulsations"></button>
-<button data-c="print" data-t="Amicial – livret d'accueil"><img loading="lazy" src="img/livret-amicial.jpg" alt="Livret d'accueil Amicial"></button>
-<button data-c="print" data-t="Amicial – affiche de recrutement"><img loading="lazy" src="img/affiche-recrutement.jpg" alt="Affiche de recrutement Amicial"></button>
-<button data-c="photo" data-t="Photo – bloc opératoire, CH de Calais"><img loading="lazy" src="img/photo-bloc.jpg" alt="Bloc opératoire"></button>
-<button data-c="photo" data-t="Photo – échographie, CH de Calais"><img loading="lazy" src="img/photo-echo.jpg" alt="Échographie"></button>
-<button data-c="photo" data-t="Photo – Japon"><img loading="lazy" src="img/photo-japon.jpg" alt="Jardin au Japon"></button>
-<button data-c="photo" data-t="Photo – Népal"><img loading="lazy" src="img/photo-nepal.jpg" alt="Enfants au Népal"></button>
-</div>
-<p class="links">Sites : <a href="https://www.ch-calais.fr">ch-calais.fr</a>, <a href="https://www.amicial.fr">amicial.fr</a>. Réseaux : @lokkikombucha, @aufut, @cabaia, @amicial_domicile.</p>
-</div></section>
+    <section class="who" id="who" aria-labelledby="who-h">
+      <div class="who-head">
+        <h2 id="who-h">Qui teste ?</h2>
+        <p>Renseigné une fois, retenu sur cet appareil.</p>
+      </div>
+      <div id="who-form" class="grid3">
+        <label class="f" for="w-name">Prénom et nom
+          <input type="text" id="w-name" autocomplete="name" placeholder="Ex. Claire Martin">
+        </label>
+        <label class="f" for="w-os">Téléphone
+          <select id="w-os">
+            <option value="">Choisir…</option>
+            <option>iPhone (iOS)</option>
+            <option>Android</option>
+          </select>
+        </label>
+        <label class="f" for="w-model">Modèle et version
+          <input type="text" id="w-model" placeholder="Ex. iPhone 13, iOS 18.2">
+        </label>
+        <label class="f" for="w-role">Profil de test
+          <select id="w-role">
+            <option>Salarié</option>
+            <option>Encadrant / responsable d'agence</option>
+            <option>Administrateur (back-office)</option>
+          </select>
+        </label>
+        <label class="f" for="w-code">Code d'accès
+          <input type="text" id="w-code" autocomplete="off" autocapitalize="off" placeholder="Reçu avec le lien">
+        </label>
+      </div>
+      <div class="row-end" id="who-save-row"><button class="btn" id="w-save">Commencer les tests</button></div>
+      <div class="who-summary" id="who-summary" hidden></div>
+    </section>
 
-<dialog id="dlg" aria-label="Réalisation en grand format"><img id="dimg" alt=""><p id="dcap"></p><button id="dx">Fermer</button></dialog>
+    <!-- PARCOURS -->
+    <section id="p-parcours" role="tabpanel" aria-labelledby="tab-parcours">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div class="strip" id="my-strip"></div>
+        <div class="notice">Pour chaque scénario : suivez les étapes, comparez avec le résultat attendu, puis cliquez sur <b>OK</b>, <b>KO</b> (le résultat n'est pas celui attendu) ou <b>Bloqué</b> (impossible de faire le test). Un KO ouvre le formulaire de signalement déjà prérempli.</div>
+        <div id="modules" style="display:flex;flex-direction:column;gap:12px"></div>
+      </div>
+    </section>
 
-<section class="wrap" id="parcours">
-<h2 class="big dots">Parcours</h2>
-<article class="job"><div><p class="dates">Depuis 08/2020</p><p class="org">Avignon</p></div><div><h3>Directeur Communication-Marketing, Amicial</h3><ul class="tight"><li>Stratégie de marque et communication omnicanale, image employeur.</li><li>Campagnes digitales, site, intranet, réseaux sociaux, CRM ; management et budget.</li></ul></div></article>
-<article class="job"><div><p class="dates">2010 – 2023</p><p class="org">Toute la France</p></div><div><h3>Consultant indépendant en communication et marketing digital</h3><ul class="tight"><li>Marques : Au fût et à mesure, Cabaïa, Lokki Kombucha, Vendredi swimwear.</li><li>Cadrage des besoins, réseaux sociaux, branding, contenus, lancements et crowdfunding.</li></ul></div></article>
-<article class="job"><div><p class="dates">10/2016 – 06/2020</p><p class="org">Calais</p></div><div><h3>Responsable Communication-Marketing, CH Dr Techer</h3><ul class="tight"><li>Refonte de l'identité visuelle, du site, de l'intranet et des réseaux sociaux.</li><li>Campagnes RP, communication de crise, référent RSE.</li></ul></div></article>
-<article class="job"><div><p class="dates">01/2008 – 10/2016</p><p class="org">Région Grand Nord</p></div><div><h3>Assistant Direction Marketing/Communication, Carrefour</h3><ul class="tight"><li>Projets marketing locaux et régionaux, lancement du projet « Bio », équipe de 6 personnes.</li></ul></div></article>
-<div class="cols" style="margin-top:2.5rem">
-<div><p class="dates">2005 – 2007</p><h3>Master II Sciences politiques, Communication institutionnelle</h3><p class="org">IEP de Lille</p></div>
-<div><p class="dates">2003 – 2005</p><h3>Licence de Droit</h3><p class="org">Université Lille II</p></div>
-<div><p class="dates">1998 – 2003</p><h3>Master II Histoire médiévale</h3><p class="org">Université Lille III</p></div></div>
-</section>
+    <!-- SIGNALER -->
+    <section id="p-signaler" role="tabpanel" aria-labelledby="tab-signaler" hidden>
+      <form class="card" id="bug-form" novalidate>
+        <h2>Signaler un problème</h2>
+        <div class="grid3">
+          <label class="f" for="b-module">Fonctionnalité
+            <select id="b-module" required></select>
+          </label>
+          <label class="f" for="b-scn">Scénario concerné <span class="hint">(facultatif)</span>
+            <select id="b-scn"><option value="">Aucun en particulier</option></select>
+          </label>
+        </div>
+        <label class="f" for="b-title">En une phrase, que se passe-t-il ?
+          <input type="text" id="b-title" required maxlength="140" placeholder="Ex. La photo ne s'envoie pas dans un groupe de discussion">
+        </label>
+        <fieldset style="border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:6px">
+          <legend class="f" style="font-size:13px;font-weight:600;color:var(--muted);margin-bottom:6px">Gravité</legend>
+          <div class="sev">
+            <label><input type="radio" name="sev" value="bloquant" id="sev-bloquant"><b>Bloquant</b><span>Impossible d'utiliser la fonction</span></label>
+            <label><input type="radio" name="sev" value="majeur" id="sev-majeur" checked><b>Majeur</b><span>Ça marche mal ou de façon incorrecte</span></label>
+            <label><input type="radio" name="sev" value="mineur" id="sev-mineur"><b>Mineur</b><span>Affichage, faute, détail gênant</span></label>
+            <label><input type="radio" name="sev" value="suggestion" id="sev-suggestion"><b>Suggestion</b><span>Idée d'amélioration</span></label>
+          </div>
+        </fieldset>
+        <label class="f" for="b-steps">Étapes pour reproduire
+          <textarea id="b-steps" placeholder="1. J'ouvre un groupe&#10;2. J'appuie sur le trombone&#10;3. Je choisis une photo de la galerie"></textarea>
+        </label>
+        <div class="grid3">
+          <label class="f" for="b-expected">Ce qui devait se passer
+            <textarea id="b-expected" placeholder="La photo apparaît dans la conversation"></textarea>
+          </label>
+          <label class="f" for="b-actual">Ce qui s'est passé
+            <textarea id="b-actual" placeholder="Chargement infini, puis message « Erreur réseau »"></textarea>
+          </label>
+        </div>
+        <div class="grid3">
+          <label class="f" for="b-freq">Fréquence
+            <select id="b-freq">
+              <option>À chaque fois</option>
+              <option>Parfois</option>
+              <option>Une seule fois</option>
+            </select>
+          </label>
+          <label class="f" for="b-capture">Lien vers une capture <span class="hint">(facultatif : Drive, Teams…)</span>
+            <input type="text" id="b-capture" placeholder="https://…">
+          </label>
+        </div>
+        <p class="hint" id="b-who" style="margin:0"></p>
+        <div class="row-end">
+          <button type="reset" class="btn ghost">Effacer</button>
+          <button type="submit" class="btn accent" id="b-submit">Envoyer le signalement</button>
+        </div>
+      </form>
+    </section>
 
-<section id="contact" class="asa"><div class="wrap" style="background:var(--paper);padding:2.5rem 1.5rem;border:3px solid var(--ink)">
-<h2 class="big">Un projet ?</h2>
-<p>Besoin d'un conseil, d'un accompagnement stratégique, de design ?</p>
-<p class="contact"><a href="tel:+33781351758">07 81 35 17 58</a><br><a href="mailto:brthub47@gmail.com">brthub47@gmail.com</a></p>
-</div></section>
-<footer><div class="wrap">Bertrand Hubert, communication et marketing digital.</div></footer>
+    <!-- SUIVI -->
+    <section id="p-suivi" role="tabpanel" aria-labelledby="tab-suivi" hidden>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div class="filters">
+          <label class="f grow" for="f-q">Rechercher
+            <input type="search" id="f-q" placeholder="Mot-clé, testeur, n° de scénario…">
+          </label>
+          <label class="f" for="f-status">Statut
+            <select id="f-status"><option value="actifs">À traiter (hors validés)</option><option value="">Tous</option></select>
+          </label>
+          <label class="f" for="f-sev">Gravité
+            <select id="f-sev"><option value="">Toutes</option></select>
+          </label>
+          <label class="f" for="f-module">Fonctionnalité
+            <select id="f-module"><option value="">Toutes</option></select>
+          </label>
+        </div>
+        <div class="row-end" id="export-row" hidden><button class="btn ghost" id="export">Exporter en CSV pour le prestataire</button></div>
+        <div class="bugs" id="bugs"></div>
+      </div>
+    </section>
+
+    <!-- SYNTHESE -->
+    <section id="p-synthese" role="tabpanel" aria-labelledby="tab-synthese" hidden>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="strip" id="g-strip"></div>
+        <div class="sectitle"><h2>Avancement par fonctionnalité</h2><p>Un scénario est couvert dès qu'un testeur l'a passé.</p></div>
+        <div class="tablewrap"><table id="t-mod"></table></div>
+        <div class="sectitle"><h2>Couverture par téléphone</h2><p>Idéalement, chaque scénario est passé au moins une fois sur iPhone et sur Android.</p></div>
+        <div class="tablewrap"><table id="t-os"></table></div>
+        <div class="sectitle"><h2>Testeurs</h2></div>
+        <div class="tablewrap"><table id="t-testers"></table></div>
+      </div>
+    </section>
+  </div>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
 <script>
-const g=document.getElementById('grid'),b=[...g.children],d=document.getElementById('dlg');
-document.querySelectorAll('.tabs button').forEach(t=>t.onclick=()=>{
-document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-pressed',x===t));
-b.forEach(i=>i.hidden=t.dataset.f!=='all'&&i.dataset.c!==t.dataset.f)});
-b.forEach(i=>i.onclick=()=>{const m=i.querySelector('img');dimg.src=m.src;dimg.alt=m.alt;dcap.innerHTML=i.dataset.t;d.showModal()});
-dx.onclick=()=>d.close();d.onclick=e=>{if(e.target===d)d.close()};
+/* ================= CONFIGURATION =================
+   Collez ici l'URL du script Google (déploiement « Application web »),
+   celle qui se termine par /exec. */
+const API_URL = 'COLLEZ_ICI_L_URL_DU_SCRIPT_GOOGLE';
+/* ================================================= */
+(() => {
+/* ---------- Plan de test ---------- */
+const MODULES = [
+ {id:'INS', name:'Présence de l\'appli et premier lancement', desc:'Vérifier que l\'application est bien sur le téléphone, puis l\'ouvrir pour la première fois.', s:[
+  ['INS-1','Trouver l\'application sur le téléphone','Chercher l\'icône Amicial sans utiliser la recherche : écran d\'accueil, autres pages, dossier, bibliothèque d\'apps (iPhone) ou tiroir d\'applications (Android). Noter en remarque où elle se trouve.','L\'application est présente, facile à repérer, avec le bon nom et la bonne icône.'],
+  ['INS-2','Premier lancement','Ouvrir l\'application pour la première fois.','L\'écran de démarrage s\'affiche en moins de 5 secondes, sans écran blanc ni message d\'erreur.']
+ ]},
+ {id:'CPT', name:'Création de compte', desc:'Première inscription d\'un salarié avec son identifiant.', s:[
+  ['CPT-1','Trouver son identifiant','Retrouver son identifiant sur sa fiche de paie ou sur sa clé Perceval, en suivant les explications affichées dans l\'app.','Les explications de l\'app permettent de trouver l\'identifiant sans aide. Le format correspond à ce que l\'app demande.'],
+  ['CPT-2','Créer son compte','Saisir son identifiant, choisir un mot de passe et valider.','Le compte est créé et on arrive sur le fil d\'actualité.'],
+  ['CPT-3','Identifiant déjà utilisé','Recommencer la création de compte avec le même identifiant.','Un message clair indique que le compte existe déjà et propose de se connecter ou de réinitialiser le mot de passe.'],
+  ['CPT-4','Identifiant erroné','Saisir un identifiant inexistant ou avec une faute de frappe (un chiffre en trop, une lettre inversée).','Un message clair explique que l\'identifiant n\'est pas reconnu et rappelle où le trouver. Rien ne plante.']
+ ]},
+ {id:'CNX', name:'Connexion', desc:'Accès au compte au quotidien.', s:[
+  ['CNX-1','Se connecter','Saisir ses identifiants et valider.','L\'accès au fil d\'actualité est immédiat.'],
+  ['CNX-2','Mauvais mot de passe','Saisir un mot de passe erroné.','Un message compréhensible s\'affiche. L\'e-mail saisi est conservé.'],
+  ['CNX-3','Mot de passe oublié','Utiliser « Mot de passe oublié », suivre l\'e-mail reçu, choisir un nouveau mot de passe.','L\'e-mail arrive, le lien fonctionne sur le téléphone, la connexion marche avec le nouveau mot de passe.'],
+  ['CNX-4','Rester connecté','Fermer complètement l\'app, la rouvrir le lendemain.','On est toujours connecté, sans ressaisir ses identifiants.'],
+  ['CNX-5','Se déconnecter','Utiliser « Se déconnecter » dans le profil ou les réglages.','Retour à l\'écran de connexion. Aucune donnée du compte n\'est visible.']
+ ]},
+ {id:'PUB', name:'Fil d\'actualité et publications', desc:'Lire et publier des contenus.', s:[
+  ['PUB-1','Parcourir le fil','Faire défiler le fil, puis tirer vers le bas pour actualiser.','Les publications s\'affichent dans l\'ordre, les images chargent, l\'actualisation fonctionne.'],
+  ['PUB-2','Publier un texte','Rédiger une publication de quelques lignes et la publier.','La publication apparaît dans le fil avec le bon nom, la bonne photo et l\'heure.'],
+  ['PUB-3','Publier une photo','Publier une photo prise avec l\'appareil photo, puis une autre choisie dans la galerie.','L\'app demande l\'autorisation d\'accès si besoin. Les photos s\'affichent nettes et dans le bon sens.'],
+  ['PUB-4','Publier un document ou une vidéo','Joindre un PDF ou une courte vidéo à une publication.','Le fichier s\'envoie et s\'ouvre correctement pour les collègues.'],
+  ['PUB-5','Modifier puis supprimer','Modifier le texte de sa publication, puis la supprimer.','La modification est visible. Une confirmation est demandée avant la suppression, puis la publication disparaît.'],
+  ['PUB-6','Réagir à une publication','Aimer une publication d\'un collègue, puis retirer la réaction.','Le compteur augmente puis diminue.']
+ ]},
+ {id:'COM', name:'Commentaires', desc:'Échanger sous une publication.', s:[
+  ['COM-1','Commenter','Ajouter un commentaire sous une publication.','Le commentaire apparaît tout de suite, avec son nom.'],
+  ['COM-2','Répondre et mentionner','Répondre à un commentaire en mentionnant un collègue avec @.','La réponse est rattachée au bon commentaire et le collègue mentionné est prévenu.'],
+  ['COM-3','Modifier, supprimer','Modifier puis supprimer son propre commentaire.','Les deux actions fonctionnent. On ne peut pas modifier le commentaire d\'un autre.'],
+  ['COM-4','Signaler un contenu','Signaler une publication ou un commentaire comme inapproprié.','Une confirmation s\'affiche. Le signalement arrive côté administration.']
+ ]},
+ {id:'GRP', name:'Groupes de discussion', desc:'Messagerie de groupe et messages privés.', s:[
+  ['GRP-1','Voir ses groupes','Ouvrir la messagerie et consulter la liste de ses groupes (agence, service…).','Les bons groupes apparaissent. Les messages non lus sont signalés.'],
+  ['GRP-2','Envoyer un message','Écrire un message dans un groupe.','Le message part immédiatement et les autres membres le reçoivent.'],
+  ['GRP-3','Envoyer une pièce jointe','Envoyer une photo et un document dans un groupe.','Les fichiers s\'envoient et s\'ouvrent chez les autres membres.'],
+  ['GRP-4','Création de groupe impossible pour un salarié','Avec un compte salarié, chercher comment créer un nouveau groupe de discussion.','Aucune option ne permet de créer un groupe : cette action est réservée aux administrateurs.'],
+  ['GRP-5','Message privé','Envoyer un message à un seul collègue.','La conversation privée n\'est visible que par les deux personnes.'],
+  ['GRP-6','Quitter ou mettre en sourdine','Couper les notifications d\'un groupe, puis le quitter.','Plus de notification après la mise en sourdine. Le groupe disparaît de la liste après l\'avoir quitté.']
+ ]},
+ {id:'NOT', name:'Notifications', desc:'À tester avec l\'application fermée et le téléphone verrouillé.', s:[
+  ['NOT-1','Autoriser les notifications','Au premier lancement, accepter la demande d\'autorisation.','La demande apparaît au bon moment, avec une phrase qui explique à quoi servent les notifications.'],
+  ['NOT-2','Commentaire reçu','Demander à un collègue de commenter votre publication, app fermée.','Une notification arrive en moins d\'une minute.'],
+  ['NOT-3','Message de groupe','Demander à un collègue d\'écrire dans un groupe commun, téléphone verrouillé.','La notification arrive et indique le groupe et l\'expéditeur.'],
+  ['NOT-4','Ouvrir depuis la notification','Toucher une notification reçue.','L\'app s\'ouvre directement sur le bon contenu (publication ou conversation).'],
+  ['NOT-5','Couper les notifications','Désactiver les notifications dans les réglages de l\'app.','Plus aucune notification n\'arrive. Elles reviennent quand on les réactive.'],
+  ['NOT-6','Pastille de l\'icône','Recevoir plusieurs notifications sans ouvrir l\'app.','Le nombre sur l\'icône correspond aux éléments non lus, et s\'efface après lecture.']
+ ]},
+ {id:'PRF', name:'Profil et annuaire', desc:'', s:[
+  ['PRF-1','Modifier son profil','Changer sa photo et ses informations.','Les changements sont visibles aussi par les collègues.'],
+  ['PRF-2','Trouver un collègue','Rechercher un collègue par son nom, puis par son agence.','La recherche trouve la bonne personne, même avec un accent oublié.']
+ ]},
+ {id:'ERG', name:'Confort d\'usage et conditions réelles', desc:'Les situations des intervenants sur le terrain.', s:[
+  ['ERG-1','Réseau faible ou absent','Passer en mode avion, puis ouvrir l\'app et essayer de publier.','Un message clair explique l\'absence de réseau. Rien ne plante, le brouillon n\'est pas perdu.'],
+  ['ERG-2','Texte agrandi','Agrandir la taille du texte dans les réglages du téléphone.','Tout reste lisible, aucun texte n\'est coupé ni superposé.'],
+  ['ERG-3','Mode sombre','Activer le mode sombre du téléphone.','Les écrans restent lisibles, sans texte noir sur fond noir.'],
+  ['ERG-4','Rapidité','Utiliser l\'app normalement pendant 10 minutes.','Pas de lenteur gênante, pas de fermeture inattendue, batterie pas anormalement sollicitée.']
+ ]},
+ {id:'ADM', name:'Back-office (administrateurs)', desc:'Réservé aux comptes administrateurs, sur le tableau de bord web.', admin:true, s:[
+  ['ADM-1','Créer des profils en masse','Depuis le tableau de bord, importer une liste de salariés (fichier) pour créer plusieurs profils d\'un coup.','Tous les profils sont créés avec les bonnes informations. Les lignes en erreur (doublon, champ manquant) sont signalées clairement sans bloquer le reste.'],
+  ['ADM-2','Créer un groupe de discussion','Créer un groupe (par exemple pour une agence) et y ajouter des membres.','Le groupe apparaît dans l\'app de chaque membre, et seulement chez eux.'],
+  ['ADM-3','Supprimer un groupe','Supprimer un groupe de discussion existant.','Une confirmation est demandée. Le groupe disparaît de l\'app de tous ses membres.'],
+  ['ADM-4','Réinitialiser un mot de passe','Réinitialiser le mot de passe d\'un salarié depuis le tableau de bord.','Le salarié peut se reconnecter avec le nouveau mot de passe ou le lien reçu. L\'ancien ne fonctionne plus.']
+ ]}
+];
+const SCN = {}; MODULES.forEach(m => m.s.forEach(s => { SCN[s[0]] = {id:s[0], t:s[1], steps:s[2], exp:s[3], mod:m.id}; }));
+const MOD = Object.fromEntries(MODULES.map(m => [m.id, m]));
+const TOTAL = Object.keys(SCN).length;
+const SEV = {bloquant:'Bloquant', majeur:'Majeur', mineur:'Mineur', suggestion:'Suggestion'};
+const SEVORDER = {bloquant:0, majeur:1, mineur:2, suggestion:3};
+const STATUS = {nouveau:'Nouveau', transmis:'Transmis au prestataire', aretester:'Corrigé, à retester', valide:'Validé', nonretenu:'Non retenu'};
+const RES = {ok:'OK', ko:'KO', bloque:'Bloqué'};
+
+/* ---------- helpers ---------- */
+const $ = s => document.querySelector(s);
+const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const slug = v => String(v||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,60) || 'x';
+const fmtDate = iso => { try { return new Date(iso).toLocaleString('fr-FR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}); } catch { return ''; } };
+const store = { get(k){ try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } }, set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch {} } };
+let toastT;
+function toast(msg){ const t=$('#toast'); t.textContent=msg; t.hidden=false; clearTimeout(toastT); toastT=setTimeout(()=>t.hidden=true, 3200); }
+
+/* ---------- state ---------- */
+let me = store.get('recette-me') || null;
+let results = {};   // docId -> data
+let bugs = [];      // [{id, ...}]
+const openBugs = new Set();
+const API_READY = /^https:\/\/script\.google(usercontent)?\.com\//.test(API_URL);
+let online = false, lastSnapshot = '';
+const myKey = () => me ? slug(me.name) + '_' + slug(me.os) + '_' + slug(me.model) : null;
+const isMobileOS = os => /iphone/i.test(os) ? 'iPhone' : (/android/i.test(os) ? 'Android' : '—');
+
+/* ---------- identity ---------- */
+function renderWho(){
+  const box = $('#who');
+  if (me){
+    $('#who-form').hidden = true; $('#who-save-row').hidden = true;
+    const s = $('#who-summary'); s.hidden = false; box.classList.remove('missing');
+    s.innerHTML = `<span class="chip">${esc(me.name)}</span><span class="chip">${esc(me.os)}${me.model ? ' · '+esc(me.model) : ''}</span><span class="chip">${esc(me.role)}</span><button class="linkbtn" id="w-edit" type="button">Modifier</button>`;
+    $('#w-edit').onclick = () => { $('#who-form').hidden=false; $('#who-save-row').hidden=false; s.hidden=true; $('#w-save').textContent='Enregistrer'; };
+    $('#b-who').textContent = `Envoyé par ${me.name} · ${me.os}${me.model ? ', '+me.model : ''}`;
+  } else {
+    box.classList.add('missing');
+    $('#b-who').textContent = 'Renseignez d\'abord « Qui teste ? » en haut de la page.';
+  }
+  $('#w-name').value = me?.name || ''; $('#w-os').value = me?.os || ''; $('#w-model').value = me?.model || ''; $('#w-role').value = me?.role || 'Salarié'; $('#w-code').value = me?.code || '';
+}
+$('#w-save').onclick = () => {
+  const name = $('#w-name').value.trim(), os = $('#w-os').value, model = $('#w-model').value.trim(), role = $('#w-role').value, code = $('#w-code').value.trim();
+  if (!name || !os){ toast('Indiquez au moins votre nom et votre téléphone.'); (name ? $('#w-os') : $('#w-name')).focus(); return; }
+  if (!code){ toast('Saisissez le code d\'accès reçu avec le lien.'); $('#w-code').focus(); return; }
+  me = {name, os, model, role, code}; store.set('recette-me', me);
+  renderWho(); refreshScenarios(); renderMyStrip(); toast('C\'est noté, bons tests !'); load();
+};
+function needMe(){ if (me) return true; toast('Renseignez d\'abord « Qui teste ? ».'); $('#who').scrollIntoView({behavior:'smooth', block:'center'}); $('#w-name').focus(); return false; }
+
+/* ---------- tabs ---------- */
+const TABS = ['parcours','signaler','suivi','synthese'];
+function showTab(id){
+  TABS.forEach(t => { $('#tab-'+t).setAttribute('aria-selected', t===id); $('#p-'+t).hidden = t!==id; });
+  store.set('recette-tab', id);
+  if (id==='suivi') renderBugs(); if (id==='synthese') renderSynth();
+}
+TABS.forEach(t => $('#tab-'+t).onclick = () => showTab(t));
+
+/* ---------- scenarios ---------- */
+function buildModules(){
+  const wrap = $('#modules');
+  wrap.innerHTML = MODULES.map((m,i) => `
+    <details class="module" data-mod="${m.id}" ${i===0?'open':''}>
+      <summary>
+        <svg class="chev" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M5 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="mcode">${m.id}</span><span class="mname">${esc(m.name)}</span>
+        <span class="mprog"><span class="bar" data-bar="${m.id}"></span><span data-prog="${m.id}"></span></span>
+      </summary>
+      ${m.desc ? `<p class="mdesc">${esc(m.desc)}</p>` : ''}
+      ${m.s.map(s => `
+        <div class="scn ${m.admin?'admin':''}" data-scn="${s[0]}">
+          <div class="scn-main">
+            <div class="scn-title"><span class="scn-id">${s[0]}</span>${esc(s[1])}</div>
+            <dl><dt>À faire</dt><dd>${esc(s[2])}</dd><dt>Attendu</dt><dd>${esc(s[3])}</dd></dl>
+          </div>
+          <div class="scn-side">
+            <div class="seg" role="group" aria-label="Résultat ${s[0]}">
+              <button type="button" data-s="ok" aria-pressed="false">OK</button>
+              <button type="button" data-s="ko" aria-pressed="false">KO</button>
+              <button type="button" data-s="bloque" aria-pressed="false">Bloqué</button>
+            </div>
+            <div class="others" data-others="${s[0]}"></div>
+          </div>
+          <div class="scn-note" hidden>
+            <textarea id="note-${s[0]}" placeholder="Remarque (facultatif)" aria-label="Remarque ${s[0]}"></textarea>
+            <button type="button" class="btn ghost" data-report="${s[0]}">Signaler un problème</button>
+          </div>
+        </div>`).join('')}
+    </details>`).join('');
+  wrap.addEventListener('click', e => {
+    const b = e.target.closest('.seg button'); if (b){ setResult(b.closest('.scn').dataset.scn, b.dataset.s); return; }
+    const r = e.target.closest('[data-report]'); if (r) openReport(r.dataset.report);
+  });
+  wrap.addEventListener('focusout', e => {
+    if (e.target.matches('textarea[id^="note-"]')) saveNote(e.target.id.slice(5), e.target.value.trim());
+  });
+}
+async function writeResult(sid, patch){
+  const key = myKey(); const id = sid + '--' + key; const prev = results[id] || {};
+  const body = {id, scenarioId:sid, module:SCN[sid].mod, tester:me.name, os:me.os, model:me.model||'', role:me.role, testerKey:key, status:prev.status||'', note:prev.note||'', ...patch, updatedAt:new Date().toISOString()};
+  results[id] = body; refreshScenarios(); renderMyStrip();
+  await send('saveResult', body);
+}
+function setResult(sid, status){
+  if (!needMe()) return;
+  const cur = results[sid+'--'+myKey()];
+  writeResult(sid, {status: cur?.status===status ? '' : status});
+  if (status==='ko' && cur?.status!=='ko') toast('Résultat KO noté. Décrivez le problème avec « Signaler un problème ».');
+}
+function saveNote(sid, note){
+  if (!me) return; const cur = results[sid+'--'+myKey()];
+  if ((cur?.note||'') === note) return;
+  writeResult(sid, {note});
+}
+function refreshScenarios(){
+  const key = myKey();
+  const by = {}; Object.values(results).forEach(r => { (by[r.scenarioId] ||= []).push(r); });
+  document.querySelectorAll('.scn').forEach(el => {
+    const sid = el.dataset.scn; const mine = key ? results[sid+'--'+key] : null;
+    el.querySelectorAll('.seg button').forEach(b => b.setAttribute('aria-pressed', mine?.status===b.dataset.s));
+    const note = el.querySelector('.scn-note'); note.hidden = !mine?.status;
+    const ta = note.querySelector('textarea'); if (document.activeElement!==ta) ta.value = mine?.note || '';
+    const all = (by[sid]||[]).filter(r => r.status);
+    const c = {ok:0,ko:0,bloque:0}; all.forEach(r => c[r.status]++);
+    const ob = bugs.filter(b => b.scenarioId===sid && !['valide','nonretenu'].includes(b.status)).length;
+    el.querySelector('.others').textContent = all.length ? `Équipe : ${c.ok} OK · ${c.ko} KO · ${c.bloque} bloqué${ob? ' · '+ob+' problème'+(ob>1?'s':'')+' ouvert'+(ob>1?'s':'') : ''}` : 'Pas encore testé';
+  });
+  MODULES.forEach(m => {
+    let o=0,k=0,b=0; m.s.forEach(s => { const r = key && results[s[0]+'--'+key]; if (r?.status==='ok') o++; else if (r?.status==='ko') k++; else if (r?.status==='bloque') b++; });
+    const n = m.s.length, pct = x => (x/n*100).toFixed(1)+'%';
+    $(`[data-bar="${m.id}"]`).innerHTML = `<i class="o" style="width:${pct(o)}"></i><i class="k" style="width:${pct(k)}"></i><i class="b" style="width:${pct(b)}"></i>`;
+    $(`[data-prog="${m.id}"]`).textContent = `${o+k+b}/${n}`;
+  });
+}
+function renderMyStrip(){
+  const key = myKey(); const mine = key ? Object.values(results).filter(r => r.testerKey===key && r.status) : [];
+  const c = {ok:0,ko:0,bloque:0}; mine.forEach(r => c[r.status]++);
+  const myBugs = me ? bugs.filter(b => b.testerKey===key).length : 0;
+  $('#my-strip').innerHTML = `
+    <div class="stat"><b>${mine.length}<span style="font-size:15px;color:var(--muted);font-weight:600"> / ${TOTAL}</span></b><span>scénarios passés par vous</span></div>
+    <div class="stat"><b style="color:var(--ok)">${c.ok}</b><span>OK</span></div>
+    <div class="stat"><b style="color:var(--ko)">${c.ko}</b><span>KO</span></div>
+    <div class="stat"><b style="color:var(--warn)">${c.bloque}</b><span>bloqués</span></div>
+    <div class="stat"><b>${myBugs}</b><span>problèmes signalés par vous</span></div>`;
+}
+
+/* ---------- report form ---------- */
+function fillSelects(){
+  $('#b-module').innerHTML = '<option value="">Choisir…</option>' + MODULES.map(m => `<option value="${m.id}">${esc(m.name)}</option>`).join('');
+  $('#f-module').innerHTML = '<option value="">Toutes</option>' + MODULES.map(m => `<option value="${m.id}">${esc(m.name)}</option>`).join('');
+  $('#f-sev').innerHTML = '<option value="">Toutes</option>' + Object.entries(SEV).map(([k,v]) => `<option value="${k}">${v}</option>`).join('');
+  $('#f-status').innerHTML = '<option value="actifs">À traiter (hors validés et non retenus)</option><option value="">Tous</option>' + Object.entries(STATUS).map(([k,v]) => `<option value="${k}">${v}</option>`).join('');
+}
+function fillScn(mod, sel){
+  const m = MOD[mod];
+  $('#b-scn').innerHTML = '<option value="">Aucun en particulier</option>' + (m ? m.s.map(s => `<option value="${s[0]}">${s[0]} · ${esc(s[1])}</option>`).join('') : '');
+  $('#b-scn').value = sel || '';
+}
+$('#b-module').onchange = e => fillScn(e.target.value);
+function openReport(sid){
+  const s = SCN[sid]; showTab('signaler');
+  $('#b-module').value = s.mod; fillScn(s.mod, sid);
+  $('#b-expected').value = s.exp;
+  const note = results[sid+'--'+myKey()]?.note; if (note && !$('#b-actual').value) $('#b-actual').value = note;
+  $('#b-title').focus(); window.scrollTo({top:0, behavior:'smooth'});
+}
+$('#bug-form').addEventListener('reset', () => setTimeout(() => fillScn(''), 0));
+$('#bug-form').addEventListener('submit', async e => {
+  e.preventDefault(); if (!needMe()) return;
+  const module = $('#b-module').value, title = $('#b-title').value.trim();
+  if (!module){ toast('Choisissez la fonctionnalité concernée.'); $('#b-module').focus(); return; }
+  if (!title){ toast('Décrivez le problème en une phrase.'); $('#b-title').focus(); return; }
+  const now = new Date().toISOString();
+  const body = {id:'B'+Date.now().toString(36)+Math.random().toString(36).slice(2,6), title, module, scenarioId:$('#b-scn').value, severity:document.querySelector('input[name=sev]:checked')?.value || 'majeur',
+    steps:$('#b-steps').value.trim(), expected:$('#b-expected').value.trim(), actual:$('#b-actual').value.trim(), frequency:$('#b-freq').value,
+    capture:$('#b-capture').value.trim(), tester:me.name, os:me.os, model:me.model||'', role:me.role, testerKey:myKey(),
+    status:'nouveau', followup:'', createdAt:now, updatedAt:now, updatedBy:''};
+  const btn = $('#b-submit'); btn.disabled = true;
+  const ok = await send('addBug', body);
+  btn.disabled = false;
+  if (!ok) return;
+  bugs.push(body);
+  $('#bug-form').reset(); $('#sev-majeur').checked = true;
+  toast('Signalement envoyé. Merci !'); onBugsChanged();
+});
+
+/* ---------- tracker ---------- */
+['#f-q','#f-status','#f-sev','#f-module'].forEach(s => $(s).addEventListener('input', () => { store.set('recette-filters', getFilters()); renderBugs(true); }));
+const getFilters = () => ({q:$('#f-q').value, status:$('#f-status').value, sev:$('#f-sev').value, module:$('#f-module').value});
+let pendingRender = false;
+function filtered(){
+  const f = getFilters(); const q = f.q.trim() ? slug(f.q).replace(/-/g,' ') : '';
+  return bugs.filter(b => {
+    if (f.status==='actifs' ? ['valide','nonretenu'].includes(b.status) : (f.status && b.status!==f.status)) return false;
+    if (f.sev && b.severity!==f.sev) return false;
+    if (f.module && b.module!==f.module) return false;
+    if (q && !slug([b.title,b.tester,b.scenarioId,b.steps,b.actual,b.followup].join(' ')).replace(/-/g,' ').includes(q)) return false;
+    return true;
+  }).sort((a,b) => (SEVORDER[a.severity]-SEVORDER[b.severity]) || String(b.createdAt).localeCompare(String(a.createdAt)));
+}
+function renderBugs(force){
+  const list = $('#bugs');
+  if (!force && list.contains(document.activeElement) && document.activeElement.matches('textarea,select')){ pendingRender = true; return; }
+  pendingRender = false;
+  const items = filtered();
+  if (!bugs.length){ list.innerHTML = `<div class="empty">Aucun problème signalé pour l'instant.<br>Les signalements des testeurs apparaîtront ici, triés par gravité.</div>`; return; }
+  if (!items.length){ list.innerHTML = `<div class="empty">Aucun problème ne correspond à ces filtres.</div>`; return; }
+  list.innerHTML = items.map(b => `
+    <details class="bug" data-id="${esc(b.id)}" data-sev="${esc(b.severity)}" ${openBugs.has(b.id)?'open':''}>
+      <summary>
+        <span class="bug-title">${esc(b.title)}</span>
+        <span class="pill st-${esc(b.status)}">${esc(STATUS[b.status]||b.status)}</span>
+        <span class="bug-meta"><span><b>${esc(SEV[b.severity]||'')}</b></span><span>${esc(MOD[b.module]?.name||b.module)}${b.scenarioId?' · '+esc(b.scenarioId):''}</span><span>${esc(isMobileOS(b.os))}</span><span>${esc(b.tester)} · ${fmtDate(b.createdAt)}</span></span>
+      </summary>
+      <div class="bug-body">
+        <dl>
+          ${b.steps?`<dt>Étapes</dt><dd>${esc(b.steps)}</dd>`:''}
+          ${b.expected?`<dt>Attendu</dt><dd>${esc(b.expected)}</dd>`:''}
+          ${b.actual?`<dt>Constaté</dt><dd>${esc(b.actual)}</dd>`:''}
+          <dt>Fréquence</dt><dd>${esc(b.frequency)}</dd>
+          <dt>Téléphone</dt><dd>${esc(b.os)}${b.model?' · '+esc(b.model):''}</dd>
+          ${b.capture?`<dt>Capture</dt><dd>${/^https?:\/\//.test(b.capture)?`<a href="${esc(b.capture)}" target="_blank" rel="noopener">Ouvrir le lien</a>`:esc(b.capture)}</dd>`:''}
+          ${b.updatedAt && b.updatedAt!==b.createdAt?`<dt>Mis à jour</dt><dd>${fmtDate(b.updatedAt)}${b.updatedBy?' par '+esc(b.updatedBy):''}</dd>`:''}
+        </dl>
+        <div class="bug-actions">
+          <label class="f" for="st-${esc(b.id)}">Statut
+            <select id="st-${esc(b.id)}" data-status>${Object.entries(STATUS).map(([k,v]) => `<option value="${k}" ${b.status===k?'selected':''}>${v}</option>`).join('')}</select>
+          </label>
+          <label class="f" for="fu-${esc(b.id)}">Suivi / réponse du prestataire
+            <textarea id="fu-${esc(b.id)}" data-followup placeholder="Ex. Transmis à Spop le 30/09, correctif prévu dans la version 1.0.3">${esc(b.followup)}</textarea>
+          </label>
+        </div>
+      </div>
+    </details>`).join('');
+}
+$('#bugs').addEventListener('toggle', e => { const d = e.target.closest?.('.bug'); if (!d) return; d.open ? openBugs.add(d.dataset.id) : openBugs.delete(d.dataset.id); }, true);
+async function patchBug(id, patch){
+  const b = bugs.find(x => x.id===id); if (!b) return;
+  Object.assign(b, patch, {updatedAt:new Date().toISOString(), updatedBy:me?.name||''});
+  onBugsChanged();
+  await send('updateBug', {id, ...patch, updatedAt:b.updatedAt, updatedBy:b.updatedBy});
+}
+$('#bugs').addEventListener('change', e => { if (e.target.matches('[data-status]')){ const id = e.target.closest('.bug').dataset.id; openBugs.add(id); patchBug(id, {status:e.target.value}); toast('Statut mis à jour'); } });
+$('#bugs').addEventListener('focusout', e => {
+  if (e.target.matches('[data-followup]')){ const id = e.target.closest('.bug').dataset.id; const v = e.target.value.trim(); const b = bugs.find(x=>x.id===id); if (b && (b.followup||'')!==v) patchBug(id, {followup:v}); }
+  setTimeout(() => { if (pendingRender) renderBugs(); }, 0);
+});
+
+/* ---------- synthesis ---------- */
+function renderSynth(){
+  const rs = Object.values(results).filter(r => r.status);
+  const testers = {}; rs.forEach(r => { (testers[r.testerKey] ||= {name:r.tester, os:r.os, model:r.model, n:0, ok:0, ko:0, bloque:0, last:''}); const t = testers[r.testerKey]; t.n++; t[r.status]++; if (r.updatedAt>t.last) t.last=r.updatedAt; });
+  bugs.forEach(b => { if (testers[b.testerKey]) testers[b.testerKey].bugs = (testers[b.testerKey].bugs||0)+1; else testers[b.testerKey] = {name:b.tester, os:b.os, model:b.model, n:0, ok:0, ko:0, bloque:0, bugs:1, last:b.createdAt}; });
+  const covered = new Set(rs.map(r => r.scenarioId));
+  const open = bugs.filter(b => !['valide','nonretenu'].includes(b.status));
+  const blockers = open.filter(b => b.severity==='bloquant').length;
+  const toRetest = bugs.filter(b => b.status==='aretester').length;
+  $('#g-strip').innerHTML = `
+    <div class="stat"><b>${covered.size}<span style="font-size:15px;color:var(--muted);font-weight:600"> / ${TOTAL}</span></b><span>scénarios couverts</span></div>
+    <div class="stat"><b>${Object.keys(testers).length}</b><span>testeurs actifs</span></div>
+    <div class="stat"><b>${open.length}</b><span>problèmes à traiter</span></div>
+    <div class="stat"><b style="color:${blockers?'var(--ko)':'var(--ok)'}">${blockers}</b><span>bloquants ouverts</span></div>
+    <div class="stat"><b>${toRetest}</b><span>corrigés, à retester</span></div>`;
+  const row = m => {
+    const ids = m.s.map(s => s[0]); const r = rs.filter(x => ids.includes(x.scenarioId));
+    const c = {ok:0,ko:0,bloque:0}; r.forEach(x => c[x.status]++);
+    const cov = ids.filter(i => covered.has(i)).length;
+    const ob = open.filter(b => b.module===m.id); const bl = ob.filter(b => b.severity==='bloquant').length;
+    return `<tr><td><b>${esc(m.name)}</b></td><td class="n">${cov} / ${ids.length}</td><td class="n" style="color:var(--ok)">${c.ok}</td><td class="n" style="color:var(--ko)">${c.ko}</td><td class="n" style="color:var(--warn)">${c.bloque}</td><td class="n">${ob.length}</td><td class="n" style="${bl?'color:var(--ko);font-weight:800':''}">${bl}</td></tr>`;
+  };
+  $('#t-mod').innerHTML = `<thead><tr><th>Fonctionnalité</th><th class="n">Couverts</th><th class="n">OK</th><th class="n">KO</th><th class="n">Bloqués</th><th class="n">Problèmes ouverts</th><th class="n">dont bloquants</th></tr></thead><tbody>${MODULES.map(row).join('')}</tbody>`;
+  const osRow = (label, test) => {
+    const r = rs.filter(x => test(x.os)); const cov = new Set(r.map(x => x.scenarioId)).size;
+    const c = {ok:0,ko:0,bloque:0}; r.forEach(x => c[x.status]++);
+    const ob = open.filter(b => test(b.os)).length;
+    return `<tr><td><b>${label}</b></td><td class="n">${cov} / ${TOTAL}</td><td class="n" style="color:var(--ok)">${c.ok}</td><td class="n" style="color:var(--ko)">${c.ko}</td><td class="n" style="color:var(--warn)">${c.bloque}</td><td class="n">${ob}</td></tr>`;
+  };
+  $('#t-os').innerHTML = `<thead><tr><th>Téléphone</th><th class="n">Scénarios couverts</th><th class="n">OK</th><th class="n">KO</th><th class="n">Bloqués</th><th class="n">Problèmes ouverts</th></tr></thead><tbody>${osRow('iPhone (iOS)', o => /iphone/i.test(o))}${osRow('Android', o => /android/i.test(o))}</tbody>`;
+  const tl = Object.values(testers).sort((a,b) => b.n-a.n);
+  $('#t-testers').innerHTML = tl.length ? `<thead><tr><th>Testeur</th><th>Téléphone</th><th class="n">Passés</th><th class="n">KO</th><th class="n">Signalements</th><th>Dernière activité</th></tr></thead><tbody>${tl.map(t => `<tr><td><b>${esc(t.name)}</b></td><td>${esc(t.os)}${t.model?' · '+esc(t.model):''}</td><td class="n">${t.n} / ${TOTAL}</td><td class="n">${t.ko}</td><td class="n">${t.bugs||0}</td><td>${fmtDate(t.last)}</td></tr>`).join('')}</tbody>`
+    : `<tbody><tr><td style="color:var(--muted);white-space:normal">Aucun testeur n'a encore enregistré de résultat.</td></tr></tbody>`;
+}
+
+/* ---------- export ---------- */
+$('#export').onclick = () => {
+  const cols = [['Titre','title'],['Gravité',b=>SEV[b.severity]],['Statut',b=>STATUS[b.status]],['Fonctionnalité',b=>MOD[b.module]?.name||b.module],['Scénario','scenarioId'],['Étapes','steps'],['Attendu','expected'],['Constaté','actual'],['Fréquence','frequency'],['Téléphone','os'],['Modèle','model'],['Testeur','tester'],['Capture','capture'],['Suivi','followup'],['Créé le',b=>fmtDate(b.createdAt)]];
+  const cell = v => '"' + String(v ?? '').replace(/"/g,'""') + '"';
+  const lines = [cols.map(c => cell(c[0])).join(';')].concat(filtered().map(b => cols.map(([,k]) => cell(typeof k==='function' ? k(b) : b[k])).join(';')));
+  const blob = new Blob(['﻿'+lines.join('\r\n')], {type:'text/csv;charset=utf-8'});
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+  a.download = `recette-appli-amicial-${new Date().toISOString().slice(0,10)}.csv`;
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+};
+
+/* ---------- sync (Google Sheets) ---------- */
+function setSync(state, text){ $('#sync').classList.toggle('off', state!=='on'); $('#sync-t').textContent = text; }
+function showOffline(msg){ const o = $('#offline'); o.textContent = msg; o.hidden = !msg; }
+async function send(action, data){
+  if (!API_READY){ return true; }
+  try {
+    const r = await fetch(API_URL, {method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'}, body:JSON.stringify({action, code:me?.code||'', data})});
+    const j = await r.json();
+    if (j.ok) return true;
+    if (j.error==='code'){ toast('Code d\'accès incorrect : vérifiez-le dans « Qui teste ? ».'); setSync('off','Code incorrect'); }
+    else toast('Enregistrement impossible pour le moment, réessayez.');
+  } catch { toast('Pas de connexion : enregistrement impossible, réessayez.'); setSync('off','Hors ligne'); }
+  return false;
+}
+async function load(){
+  if (!API_READY){ showOffline('Mode démonstration : l\'adresse du script Google n\'est pas encore renseignée dans la page. Vos saisies restent sur cet écran.'); setSync('off','Démo'); return; }
+  if (!me?.code){ setSync('off','Code d\'accès requis'); return; }
+  try {
+    const r = await fetch(API_URL + '?action=list&code=' + encodeURIComponent(me.code) + '&t=' + Date.now());
+    const j = await r.json();
+    if (!j.ok){ setSync('off', j.error==='code' ? 'Code incorrect' : 'Erreur'); if (j.error==='code') showOffline('Le code d\'accès saisi n\'est pas le bon. Cliquez sur « Modifier » dans « Qui teste ? » pour le corriger.'); return; }
+    showOffline(''); online = true;
+    setSync('on', 'Synchronisé ' + new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}));
+    const snap = JSON.stringify([j.results, j.bugs]);
+    if (snap === lastSnapshot) return; lastSnapshot = snap;
+    const next = {}; (j.results||[]).forEach(r => { next[r.id] = r; }); results = next;
+    bugs = (j.bugs||[]).map(b => ({...b}));
+    onResultsChanged(); onBugsChanged();
+  } catch { setSync('off','Hors ligne'); }
+}
+
+/* ---------- sync ---------- */
+function onBugsChanged(){
+  $('#c-open').textContent = bugs.filter(b => !['valide','nonretenu'].includes(b.status)).length;
+  refreshScenarios(); renderMyStrip();
+  if (!$('#p-suivi').hidden) renderBugs(); if (!$('#p-synthese').hidden) renderSynth();
+}
+function onResultsChanged(){ refreshScenarios(); renderMyStrip(); if (!$('#p-synthese').hidden) renderSynth(); }
+
+/* ---------- boot ---------- */
+buildModules(); fillSelects(); fillScn('');
+$('#export-row').hidden = false;
+const f = store.get('recette-filters'); if (f){ $('#f-q').value=f.q||''; $('#f-status').value=f.status ?? 'actifs'; $('#f-sev').value=f.sev||''; $('#f-module').value=f.module||''; }
+renderWho(); refreshScenarios(); renderMyStrip(); onBugsChanged();
+const t0 = (location.hash||'').slice(1); showTab(TABS.includes(t0) ? t0 : (store.get('recette-tab') || 'parcours'));
+load();
+setInterval(() => { if (document.visibilityState==='visible') load(); }, 20000);
+document.addEventListener('visibilitychange', () => { if (document.visibilityState==='visible') load(); });
+})();
 </script>
 </body>
 </html>
